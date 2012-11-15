@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+file = File.open(ARGV[0], "r")
+contents = file.read + "\n\n"
+
+subbed = '<tt xmlns="http://www.w3.org/2006/10/ttaf1"> <body> <div xml:id="captions">'
+subbed += "\n\n"
+
+subbed += contents.gsub(/(\d:\d{2}:\d{2}\.\d{3}),(\d:\d{2}:\d{2}\.\d{3})\n((?:^.*$\n)*?)\n/) { |m|
+  "<p begin=\"#{$1}\" end=\"#{$2}\">#{$3}</p>\n\n"
+}
+
+subbed += ' </div> </body> </tt>'
+
+
+file = File.open("#{ARGV[1] || ARGV[0].split(".").first}.xml", "w") { |f| f.write(subbed) }
+
+
