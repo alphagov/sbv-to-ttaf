@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Sbv::To::Ttaf::VERSION
   gem.authors       = ["Jack Franklin"]
   gem.email         = ["jack@jackfranklin.net"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = " Convert sbv to TTAF"
+  gem.summary       = "convert sbv to ttaf"
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
