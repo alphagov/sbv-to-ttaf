@@ -16,11 +16,11 @@ gem install pkg/sbv-to-ttaf-0.0.1.gem
 We needed a tool to convert Youtube's SBV captions format, which looked like:
 
 ```
-0:00:09.510,0:00:15.219
+0:00:09.510,0:00:15
 learn about Agile and how it works. For me
 in particular it’s meant going out into
 
-0:00:15.219,0:00:21.010
+0:00:15.219,0:00:21
 departments where they have an idea of a product
 they want, rewinding them a couple of steps
 ```
@@ -30,11 +30,11 @@ And turn it into XML that looks like:
 ```xml
 <tt xmlns="http://www.w3.org/2006/10/ttaf1"> <body> <div xml:id="captions">
 
-<p begin="0:00:09.510" end="0:00:15.219">learn about Agile and how it works. For me
+<p begin="0:00:09" end="0:00:15">learn about Agile and how it works. For me
 in particular it’s meant going out into
 </p>
 
-<p begin="0:00:15.219" end="0:00:21.010">departments where they have an idea of a product
+<p begin="0:00:15" end="0:00:21">departments where they have an idea of a product
 they want, rewinding them a couple of steps
 </p>
 
