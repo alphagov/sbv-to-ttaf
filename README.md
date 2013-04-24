@@ -1,5 +1,8 @@
 ## Installation
 
+You'll need Ruby installed and also Rake, which you can install with `gem install rake`.
+
+Then just pull this repository down, and install the gem:
 
 ```
 git clone git@github.com:alphagov/sbv-to-ttaf.git
